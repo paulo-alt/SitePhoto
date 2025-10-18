@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galeria de Fotos</title>
+  <style>
+    body {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 2rem;
+      font-family: 'Inter', sans-serif;
+      background: #f5f5f5;
+      color: #333;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+
+    .title {
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: #000;
+      margin-bottom: 1rem;
+    }
+
+    .photographer {
+      background: white;
+      border-radius: 8px;
+      padding: 2rem;
+      margin-bottom: 3rem;
+      text-align: center;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    .photographer-avatar {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      background: #000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 1.5rem;
+      margin: 0 auto 1rem;
+    }
+
+    .photographer-name {
+      font-size: 1.2rem;
+      color: #000;
+      margin-bottom: 0.5rem;
+      font-weight: 600;
+    }
+
+    .photographer-bio {
+      color: #666;
+      line-height: 1.5;
+    }
+
+    .section-title {
+      font-size: 1.5rem;
+      color: #000;
+      margin-bottom: 1.5rem;
+      text-align: center;
+      font-weight: 600;
+    }
+
+    .links-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+      max-width: 800px;
+      margin: 0 auto 3rem;
+    }
+
+    .photo-link {
+      display: flex;
+      align-items: center;
+      padding: 1rem;
+      background: white;
+      border-radius: 8px;
+      text-decoration: none;
+      color: #333;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      transition: all 0.2s;
+      justify-content: space-between;
+    }
+
+    .photo-link:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+      color: #000;
+    }
+
+    .link-number {
+      font-weight: 700;
+      color: #000;
+      margin-right: 1rem;
+      font-size: 1.1rem;
+    }
+
+    .link-name {
+      font-weight: 500;
+      flex: 1;
+    }
+
+    .external-icon {
+      font-size: 1.2rem;
+      color: #666;
+      margin-left: 0.5rem;
+      transition: transform 0.2s;
+    }
+
+    .photo-link:hover .external-icon {
+      transform: translate(2px, -2px);
+      color: #000;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .photo {
+      background: white;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      transition: transform 0.2s;
+    }
+
+    .photo:hover {
+      transform: translateY(-2px);
+    }
+
+    .photo img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+    }
+
+    .photo-info {
+      padding: 1rem;
+    }
+
+    .photo-title {
+      font-weight: 600;
+      color: #000;
+      margin-bottom: 0.5rem;
+    }
+
+    .photo-description {
+      color: #666;
+      font-size: 0.9rem;
+      line-height: 1.4;
+    }
+
+    @media (max-width: 768px) {
+      body { padding: 1rem; }
+      .title { font-size: 2rem; }
+      .grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <header class="header">
+      <h1 class="title">Photo Essence</h1>
+    </header>
+
+   <section class="photographer">
+  <img src="Images/Diguinho.webp" alt="Foto do fotógrafo Diguinho" class="photographer-photo">
+  <h2 class="photographer-name">Diguinho</h2>
+  <p class="photographer-bio">
+    Fotógrafo profissional especializado em retratos, com muitos anos de experiência.
+  </p>
+</section>
+    <!--Links html -- corrigido-->
+    <section>
+      <h2 class="section-title">Galeria de Fotos</h2>
+      <div class="links-grid">
+        <a href="Por do sol.html" class="photo-link" target="_blank">
+          <span class="link-number">01</span>
+          <span class="link-name">Pôr do Sol Urbano</span>
+          <span class="external-icon">↗</span>
+        </a>
+        <a href="flores da primavera.html" class="photo-link" target="_blank">
+          <span class="link-number">02</span>
+          <span class="link-name">Flores da Primavera</span>
+          <span class="external-icon">↗</span>
+        </a>
+        <a href="Montanhas majestosas.html" class="photo-link" target="_blank">
+          <span class="link-number">03</span>
+          <span class="link-name">Montanhas Majestosas</span>
+          <span class="external-icon">↗</span>
+        </a>
+        <a href="Ondas do oceano.html" class="photo-link" target="_blank">
+          <span class="link-number">04</span>
+          <span class="link-name">Ondas do Oceano</span>
+          <span class="external-icon">↗</span>
+        </a>
+        <a href="águia.html" class="photo-link" target="_blank">
+          <span class="link-number">05</span>
+          <span class="link-name">Águia em Voo</span>
+          <span class="external-icon">↗</span>
+        </a>
+        <a href="noite estrelada.html" class="photo-link" target="_blank">
+          <span class="link-number">06</span>
+          <span class="link-name">Noite Estrelada</span>
+          <span class="external-icon">↗</span>
+        </a>
+      </div>
+    </section>
+
+    <div class="grid">
+      <div class="photo">
+        <img src="Images/sol.jpg" alt="Pôr do Sol Urbano">
+        <div class="photo-info">
+          <h3 class="photo-title">Pôr do Sol Urbano</h3>
+          <p class="photo-description">O contraste entre a arquitetura moderna e a beleza natural do entardecer.</p>
+        </div>
+      </div>
+
+      <div class="photo">
+        <img src="Images/flores.webp" alt="Flores da Primavera">
+        <div class="photo-info">
+          <h3 class="photo-title">Flores da Primavera</h3>
+          <p class="photo-description">A delicadeza das pétalas capturada em um momento de pura serenidade.</p>
+        </div>
+      </div>
+
+      <div class="photo">
+        <img src="Images/motanha.webp" alt="Montanhas Majestosas">
+        <div class="photo-info">
+          <h3 class="photo-title">Montanhas Majestosas</h3>
+          <p class="photo-description">A grandiosidade da natureza em sua forma mais imponente e selvagem.</p>
+        </div>
+      </div>
+
+      <div class="photo">
+        <img src="Images/onda onda.webp" alt="Ondas do Oceano">
+        <div class="photo-info">
+          <h3 class="photo-title">Ondas do Oceano</h3>
+          <p class="photo-description">O movimento perpétuo das águas em uma dança hipnotizante.</p>
+        </div>
+      </div>
+
+      <div class="photo">
+        <img src="Images/aguia.webp" alt="Águia em Voo">
+        <div class="photo-info">
+          <h3 class="photo-title">Águia em Voo</h3>
+          <p class="photo-description">A leveza e graciosidade capturadas em um instante fugaz.</p>
+        </div>
+      </div>
+
+      <div class="photo">
+        <img src="Images/van gogh.webp" alt="Noite Estrelada">
+        <div class="photo-info">
+          <h3 class="photo-title">Noite Estrelada</h3>
+          <p class="photo-description">O mistério e a beleza do céu noturno em toda sua magnificência.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

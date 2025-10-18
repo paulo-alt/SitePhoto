@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Águia em Voo</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        background: linear-gradient(135deg, #f9fafb 0%, #e0f2fe 100%);
+        min-height: 100vh;
+      }
+
+      .container {
+        max-width: 1024px;
+        margin: 0 auto;
+        padding: 2rem 1.5rem;
+      }
+
+      .section-title {
+        font-size: 2rem;
+        font-weight: bold;
+        color: #1f2937;
+        margin-bottom: 2rem;
+        text-align: center;
+      }
+
+      .photo-link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        padding: 1rem 2rem;
+        background: white;
+        border-radius: 12px;
+        text-decoration: none;
+        color: #1f2937;
+        font-weight: 600;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease;
+      }
+
+      .photo-link:hover {
+        transform: translateY(-3px);
+        background: #e0f2fe;
+      }
+
+      .card {
+        background: white;
+        border-radius: 12px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        padding: 2rem;
+        margin-bottom: 2rem;
+      }
+
+      .text-center {
+        text-align: center;
+      }
+
+      .photographer-photo {
+        display: block;
+        margin: 0 auto;
+        border-radius: 8px;
+        width: 400px;
+        height: 400px;
+        object-fit: cover;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+      }
+
+      .story-title {
+        font-size: 2.5rem;
+        font-weight: bold;
+        color: #1f2937;
+        margin-bottom: 1.5rem;
+        text-align: center;
+      }
+
+      .story-text {
+        color: #4b5563;
+        line-height: 1.7;
+        font-size: 1.125rem;
+      }
+
+      @media (max-width: 768px) {
+        .photographer-photo {
+          width: 300px;
+          height: 300px;
+        }
+
+        .story-title {
+          font-size: 2rem;
+        }
+
+        .section-title {
+          font-size: 1.5rem;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <main class="container">
+      
+      <!-- Botão de Voltar -->
+      <section>
+        <h2 class="section-title">Por do sol</h2>
+        <div style="text-align:center;">
+          <a href="index.html" class="photo-link">← Voltar ao Index</a>
+        </div>
+      </section>
+
+      <!-- Foto -->
+      <section class="card text-center">
+        <img src="Images/sol.jpg" alt="Foto da Águia" class="photographer-photo">
+      </section>
+
+      <!-- História -->
+      <section class="card">
+        <h1 class="story-title">História da Foto</h1>
+        <div class="story-text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> At nulla ipsam labore doloremque quidem animi itaque. Commodi quasi natus obcaecati harum illo nisi provident voluptate nesciunt sint. Molestias, minima nostrum.
+        </div>
+      </section>
+
+    </main>
+  </body>
+</html>
